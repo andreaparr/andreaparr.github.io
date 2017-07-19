@@ -6,16 +6,138 @@
 
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+
 <style>
 
-/* CSS style rules go here! */
-
+    header {
+      width: 100%;
+      min-width: 800px;
+      margin: 0 auto;
+      background: steelblue;
+      padding: 15px 0 20px;
+    }
+    h1 {
+      font-family: Dosis, sans-serif;
+      color: #375671;
+      width: 80%;
+      margin: 0 auto;
+      color: whitesmoke;
+    }
+    h2 {
+      font-family: Dosis, sans-serif;
+      color: #375671;
+      width: 80%;
+      margin: 0 auto;
+      color: whitesmoke;
+    }
+    h3 {
+        font-family: Dosis, sans-serif;
+        color: #003d71
+    }
+    p {
+        font-size: .9em;
+        color: #375671;
+    }
+    ul {
+        list-style-type: none;
+        font-size: .9em;
+        color: #375671;
+        line-height: 1.6em;
+    }
+    a, a:visited {
+        color: #003d71;
+        }
+    .project {
+    width: 80%;
+    min-width: 800px;
+    height: 100%;
+    margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .project-image {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #dddddd;
+    }
+    body {
+        background: #f5f5f5;
+        font-family: Imprima, sans-serif;
+    }
 </style>
+
 </head>
 
 <body>
+  <header>
+    <h1>MAP672: Programming for Web Mapping</h1>
+    <h2>Web Cartography at the University of Kentucky</h2>
+  </header>
+<!-- NOTE: This section is from 671, module 4 -->
+    <section class="project">
+      <img src="images/brew.gif" alt="map of breweries" class="project-image" />
+      <h3>Booze</h3>
+      <p>This thematic map shows the density of breweries in North America in a hexagonal
+        grid (hexbins). The hexabins are shaded in proportion to the measurement of the
+        statistical variable, in this case, breweries. Hexabin maps differ from choropleth
+        maps in that equal-sized spaces, rather than political boundaries, are used.</p>
+      <p>This map was generated in QGIS using SQL and geometry tools.</p>
+      <ul>
+          <li>See the map: <a href="images/Breweries.pdf" target="_blank">Breweries in North America and Hawaii</a></li>
+          <li>Data Source: <a href="http://www.poi-factory.com/node/21733" target="_blank">The POI Factory</a>, February 2017.</li>
+      </ul>
+    </section>
 
-    <p>Hello World! I'm going to be a portfolio page.</p>
+<!-- NOTE: This section is from 671, module 9 -->
+    <section class="project">
+      <img src="images/wildfire.gif" alt="map of wildfires" class="project-image" />
+      <h3>Fire</h3>
+      <p>This thematic map shows the percentage of a county that was burned by wildfires in 2013.
+      When you zoom in to level 6, you can view the names and causes of individual fires.</p>
+      <p>The map was created in CartoDB.</p>
+      <ul>
+          <li>See the map: <a href="https://nmp.carto.com/u/andrearparr/builder/c38ee79c-10bc-11e7-b21f-0ee66e2c9693/embed" target="_blank">US Wildfires, 2013</a></li>
+          <li>Data Source: <a href="https://www.fs.usda.gov/rds/archive/products/RDS-2013-0009.3/_metadata_RDS-2013-0009.3.html" target="_blank">Forest Service Research Data Archive</a>, Karen C. Short, 2015.</li>
+      </ul>
+    </section>
+
+  </section>
+
+<!-- NOTE: This section is from 672, module 8 -->
+  <section class="project">
+    <img src="images/powerplant.gif" alt="power plants" class="project-image" />
+    <h3>Power</h3>
+    <p>This thematic map shows the location and capacity of solar, electric, and hydro power plants in the United States.</p>
+    <P>This map was generated using GeoJSON-encoded data within Leaflet to draw data layers.</p>
+    <ul>
+        <li>See the map: <a href="https://andreaparr.github.io/power-plants" target="_blank">Sustainable Energy in the United States</a></li>
+        <li>Data Source: <a href="https://www.eia.gov/electricity/data/eia923/" target="_blank">US Energy Information Administration</a>, 2017.</li>
+    </ul>
+  </section>
+
+  <!-- NOTE: This section is from 672, module 10 -->
+    <section class="project">
+      <img src="images/rent.gif" alt="power plants" class="project-image" />
+      <h3>Home</h3>
+      <p>This choropleth map displays median rental prices by county in the United States. The
+      data comes from the U.S. Census Bureau, 2015 American Community Survey. Data was not
+     available for all counties.</p>
+      <p>The map was generated using custom Javascript, including the Leaflet and JQuery libraries.
+        External data files were loaded using using AJAX.</p>
+      <ul>
+          <li>See the map: <a href="https://andreaparr.github.io/housing" target="_blank">Housing Prices in the United States, 2015</a></li>
+          <li>Data Source: <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank">American Fact Finder</a>, 2017.</li>
+      </ul>
+    </section>
 
 </body>
 </html>
