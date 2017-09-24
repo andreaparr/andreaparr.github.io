@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>MAP672 Portfolio Example</title>
+  <meta charset="utf-8">
+  <title>New Maps Plus Portfolio</title>
 
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
 
-<style>
-
+  <style>
     header {
       width: 100%;
       min-width: 800px;
@@ -19,6 +19,7 @@
       background: steelblue;
       padding: 15px 0 20px;
     }
+
     h1 {
       font-family: Dosis, sans-serif;
       color: #375671;
@@ -26,6 +27,7 @@
       margin: 0 auto;
       color: whitesmoke;
     }
+
     h2 {
       font-family: Dosis, sans-serif;
       color: #375671;
@@ -33,112 +35,143 @@
       margin: 0 auto;
       color: whitesmoke;
     }
+
     h3 {
-        font-family: Dosis, sans-serif;
-        color: #003d71
+      font-family: Dosis, sans-serif;
+      color: #003d71
     }
+
     p {
-        font-size: .9em;
-        color: #375671;
+      font-size: .9em;
+      color: #375671;
     }
+
     ul {
-        list-style-type: none;
-        font-size: .9em;
-        color: #375671;
-        line-height: 1.6em;
+      list-style-type: none;
+      font-size: .9em;
+      color: #375671;
+      line-height: 1.6em;
     }
-    a, a:visited {
-        color: #003d71;
-        }
+
+    a,
+    a:visited {
+      color: #003d71;
+    }
+
     .project {
-    width: 80%;
-    min-width: 800px;
-    height: 100%;
-    margin: 35px auto;
+      width: 80%;
+      min-width: 800px;
+      height: 100%;
+      margin: 35px auto;
     }
-    .project:after{
-        content: "";
-        display: table;
-        clear: both;
+
+    .project:after {
+      content: "";
+      display: table;
+      clear: both;
     }
+
     .project-image {
-        width: 388px;
-        height: 240px;
-        background: white;
-        float: left;
-        margin-right: 20px;
-        border: 2px solid #dddddd;
+      width: 388px;
+      height: 240px;
+      background: white;
+      float: left;
+      margin-right: 20px;
+      border: 2px solid #dddddd;
     }
+
     body {
-        background: #f5f5f5;
-        font-family: Imprima, sans-serif;
+      background: #f5f5f5;
+      font-family: Imprima, sans-serif;
     }
-</style>
+  </style>
 
 </head>
 
 <body>
   <header>
-    <h1>MAP672: Programming for Web Mapping</h1>
+    <h1>New Maps Plus Portfolio</h1>
     <h2>Web Cartography at the University of Kentucky</h2>
   </header>
-<!-- NOTE: This section is from 671, module 4 -->
-    <section class="project">
-      <img src="images/brew.gif" alt="map of breweries" class="project-image" />
-      <h3>Booze</h3>
-      <p>This thematic map shows the density of breweries in North America in a hexagonal
-        grid (hexbins). The hexabins are shaded in proportion to the measurement of the
-        statistical variable, in this case, breweries. Hexabin maps differ from choropleth
-        maps in that equal-sized spaces, rather than political boundaries, are used.</p>
-      <p>The map was generated in QGIS using SQL and geometry tools.</p>
-      <ul>
-          <li>See the map: <a href="images/Breweries.pdf" target="_blank">Breweries in North America and Hawaii</a></li>
-          <li>Data Source: <a href="http://www.poi-factory.com/node/21733" target="_blank">The POI Factory</a>, February 2017.</li>
-      </ul>
-    </section>
 
-<!-- NOTE: This section is from 671, module 9 -->
-    <section class="project">
-      <img src="images/wildfire.gif" alt="map of wildfires" class="project-image" />
-      <h3>Fire</h3>
-      <p>This map shows the percentage of US counties that were burned by wildfires in 2013.
-      Upon zooming, the names and causes of individual fires are available. The time series widget
-    allows users to isolate the data by a data or range of dates.</p>
-      <p>The map was created in CartoDB.</p>
-      <ul>
-          <li>See the map: <a href="https://nmp.carto.com/u/andrearparr/builder/c38ee79c-10bc-11e7-b21f-0ee66e2c9693/embed" target="_blank">US Wildfires, 2013</a></li>
-          <li>Data Source: <a href="https://www.fs.usda.gov/rds/archive/products/RDS-2013-0009.3/_metadata_RDS-2013-0009.3.html" target="_blank">Forest Service Research Data Archive</a>, Karen C. Short, 2015.</li>
-      </ul>
-    </section>
+  <!-- NOTE: This section is from 673, module 8, 9, 10 -->
+  <section class="project">
+    <img src="images/waterutility.png" alt="water privatization" class="project-image" />
+    <h3>Water</h3>
+    <p>This map shows information about water utility ownership (public vs private) in the United States. The circles represent the 500 largest water utlities in the US and are scaled proportionally based on the population served. The state layer provides
+      a summary of all water systems and is shaded based on the percentage of systems that are privately owned. </p>
+    <p>The map was generated using custom Javascript, including the Mapbox, Leaflet, and jQuery libraries. Data from the US EPA's Safe Drinking Water Information System and annual bill survey information from Food and Water Watch was joined in QGIS and geocoded
+      using the Google geocode API.</p>
+    <ul>
+      <li>See the map: <a href="https://andreaparr.github.io/water-ownership" target="_blank">Who Owns Your Water?</a></li>
+      <li>Data Sources: <a href="https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::" target="_blank">Safe Drinking Water Information System Reports</a>, 2017. <a href="https://www.foodandwaterwatch.org/sites/default/files/water_rate_survey-ranking.pdf" target="_blank">Survey of the 500 Largest Community Water Systems</a>,
+        2015.</li>
 
   </section>
 
-<!-- NOTE: This section is from 672, module 8 -->
+  <!-- NOTE: This section is from 671, module 9 -->
+  <section class="project">
+    <img src="images/wildfire.gif" alt="map of wildfires" class="project-image" />
+    <h3>Fire</h3>
+    <p>This map shows the percentage of US counties that were burned by wildfires in 2013. Upon zooming, the names and causes of individual fires are available. The time series widget allows users to isolate the data by a data or range of dates.</p>
+    <p>The map was created in CartoDB.</p>
+    <ul>
+      <li>See the map: <a href="https://nmp.carto.com/u/andrearparr/builder/c38ee79c-10bc-11e7-b21f-0ee66e2c9693/embed" target="_blank">US Wildfires, 2013</a></li>
+      <li>Data Source: <a href="https://www.fs.usda.gov/rds/archive/products/RDS-2013-0009.3/_metadata_RDS-2013-0009.3.html" target="_blank">Forest Service Research Data Archive</a>, Karen C. Short, 2015.</li>
+    </ul>
+  </section>
+
+  </section>
+
+  <!-- NOTE: This section is from 672, module 8 -->
   <section class="project">
     <img src="images/powerplant.gif" alt="power plants" class="project-image" />
     <h3>Power</h3>
     <p>This thematic map shows the location and capacity of solar, electric, and hydro power plants in the United States.</p>
     <P>This map was generated using GeoJSON-encoded data within Leaflet to draw data layers. Custom Javascript was also used.</p>
     <ul>
-        <li>See the map: <a href="https://andreaparr.github.io/power-plants" target="_blank">Sustainable Energy in the United States</a></li>
-        <li>Data Source: <a href="https://www.eia.gov/electricity/data/eia923/" target="_blank">US Energy Information Administration</a>, 2017.</li>
+      <li>See the map: <a href="https://andreaparr.github.io/power-plants" target="_blank">Sustainable Energy in the United States</a></li>
+      <li>Data Source: <a href="https://www.eia.gov/electricity/data/eia923/" target="_blank">US Energy Information Administration</a>, 2017.</li>
     </ul>
   </section>
 
   <!-- NOTE: This section is from 672, module 10 -->
-    <section class="project">
-      <img src="images/rent.gif" alt="power plants" class="project-image" />
-      <h3>Home</h3>
-      <p>This choropleth map displays median rental prices by county in the United States. The
-      data comes from the U.S. Census Bureau, 2015 American Community Survey. Data was not
-     available for all counties.</p>
-      <p>The map was generated using custom Javascript, including the Leaflet and JQuery libraries.
-        External data files were loaded using using AJAX.</p>
-      <ul>
-          <li>See the map: <a href="https://andreaparr.github.io/housing" target="_blank">Housing Prices in the United States, 2015</a></li>
-          <li>Data Source: <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank">American Fact Finder</a>, 2017.</li>
-      </ul>
-    </section>
+  <section class="project">
+    <img src="images/rent.gif" alt="power plants" class="project-image" />
+    <h3>Home</h3>
+    <p>This choropleth map displays median rental prices by county in the United States. The data comes from the U.S. Census Bureau, 2015 American Community Survey. Data was not available for all counties.</p>
+    <p>The map was generated using custom Javascript, including the Leaflet and jQuery libraries. External data files were loaded using using AJAX.</p>
+    <ul>
+      <li>See the map: <a href="https://andreaparr.github.io/housing" target="_blank">Housing Prices in the United States, 2015</a></li>
+      <li>Data Source: <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank">American Fact Finder</a>, 2017.</li>
+    </ul>
+  </section>
+
+  <!-- NOTE: This section is from 673, module 5 -->
+  <section class="project">
+    <img src="images/kenya.png" alt="kenya education" class="project-image" />
+    <h3>Learn</h3>
+    <p>This map shows the primary school (1st to 8th grade) enrollment of boys and girls in Kenyan counties. The info windows include persistence trends for each county. </p>
+    <p>The map was generated using custom Javascript, including the Leaflet, Mapbox, Omnivore, jQuery, and jQuery sparkline libraries. Assembly CSS was used.</p>
+    <ul>
+      <li>See the map: <a href="https://andreaparr.github.io/kenya-education" target="_blank">Primary School Education in Kenya</a></li>
+      <li>Data Source: <a href="http://icta-kenyaopendata.opendata.arcgis.com/datasets/national-boys-and-girls-enrollments-per-class-for-primary-school-education" target="_blank">Kenya Open Data</a></li>
+    </ul>
+  </section>
+
+  <!-- NOTE: This section is from 671, module 4 -->
+  <section class="project">
+    <img src="images/brew.gif" alt="map of breweries" class="project-image" />
+    <h3>Brews</h3>
+    <p>This thematic map shows the density of breweries in North America in a hexagonal grid (hexbins). The hexabins are shaded in proportion to the measurement of the statistical variable, in this case, breweries. Hexabin maps differ from choropleth maps
+      in that equal-sized spaces, rather than political boundaries, are used.</p>
+    <p>The map was generated in QGIS using SQL and geometry tools.</p>
+    <ul>
+      <li>See the map: <a href="images/Breweries.pdf" target="_blank">Breweries in North America and Hawaii</a></li>
+      <li>Data Source: <a href="http://www.poi-factory.com/node/21733" target="_blank">The POI Factory</a>, February 2017.</li>
+    </ul>
+  </section>
 
 </body>
+
 </html>
